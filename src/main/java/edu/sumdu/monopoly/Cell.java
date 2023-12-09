@@ -2,16 +2,11 @@ package edu.sumdu.monopoly;
 
 public abstract class Cell {
 	private String name;
-	protected Player owner;
 
 	public String getName() {
 		return name;
 	}
 
-	public Player getOwner() {
-		return owner;
-	}
-	
 	public int getPrice() {
 		return 0;
 	}
@@ -22,11 +17,7 @@ public abstract class Cell {
 		this.name = name;
 	}
 
-	public void setOwner(Player owner) {
-		this.owner = owner;
-	}
-    
-    public String toString() {
+	public String toString() {
         return name;
     }
 
